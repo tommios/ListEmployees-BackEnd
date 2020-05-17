@@ -41,7 +41,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
   const { firstname } = req.query;
 
-  var condition = firstname
+  let condition = firstname
     ? {
         firstname: { $regex: new RegExp(firstname), $options: "i" },
       }
