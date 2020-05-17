@@ -27,6 +27,7 @@ db.mongoose
   })
   .then(() => {
     console.log("Successfully connect to MongoDB.");
+    initial();
   })
   .catch((err) => {
     console.log("Connection error", err);
@@ -84,6 +85,8 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to application." });
 });
 
+require("./app/routes/auth.routes")(app);
+require("./app/routes/user.routes")(app);
 require("./app/routes/employee.routes.js")(app);
 
 // set port, listen for requests
