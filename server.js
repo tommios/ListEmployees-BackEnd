@@ -1,4 +1,5 @@
 const express = require("express");
+const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -18,6 +19,9 @@ app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// secure Express apps by setting various HTTP headers
+app.use(helmet());
 
 db.mongoose
   .connect(`mongodb://${db.HOST}:${db.PORT}/${db.DB}`, {
