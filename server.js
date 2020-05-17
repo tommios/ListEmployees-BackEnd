@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+
 const db = require("./app/models");
+const Role = db.role;
 
 const app = express();
 
@@ -18,16 +20,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 db.mongoose
-  .connect(db.url, {
+  .connect(`mongodb://${db.HOST}:${db.PORT}/${db.DB}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
   })
   .then(() => {
-    console.log("Connected to the database!");
+    console.log("Successfully connect to MongoDB.");
   })
   .catch((err) => {
-    console.log("Cannot connect to the database!", err);
+    console.log("Connection error", err);
     process.exit();
   });
 
