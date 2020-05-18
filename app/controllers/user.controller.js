@@ -6,7 +6,9 @@
 // – /api/test/admin    for admin users
 
 exports.allAccess = (req, res) => {
-  res.status(200).send("Public Content.");
+  res
+    .status(200)
+    .send("Welcome to React + Node.js Express: User Authentication with JWT");
 };
 
 exports.userBoard = (req, res) => {

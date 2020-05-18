@@ -6,6 +6,7 @@
 
 const { authJwt } = require("../middleware");
 const controller = require("../controllers/user.controller");
+const employees = require("../controllers/employee.controller");
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -31,4 +32,22 @@ module.exports = function (app) {
     [authJwt.verifyToken, authJwt.isAdmin],
     controller.adminBoard
   );
+
+  // Create a new Employee
+  app.post("/api/employees/", [authJwt.verifyToken], employees.create);
+
+  // Retrieve all Employees
+  app.get("/api/employees/", [authJwt.verifyToken], employees.findAll);
+
+  // Retrieve a single Employee with id
+  app.get("/api/employees/:id", [authJwt.verifyToken], employees.findOne);
+
+  // Update a Employee with id
+  app.patch("/api/employees/:id", [authJwt.verifyToken], employees.update);
+
+  // Delete a Employee with id
+  app.delete("/api/employees/:id", [authJwt.verifyToken], employees.delete);
+
+  // Delete all Employees
+  app.delete("/api/employees/", [authJwt.verifyToken], employees.deleteAll);
 };
