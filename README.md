@@ -12,8 +12,8 @@ Screenshots:
 
 ![Иллюстрация к проекту](https://github.com/tommios/ListEmployees-BackEnd/blob/dev-jwt-auth/image/01_Postman_signin.JPG)
 
-![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/02_GET_with_token.JPG)
+![Иллюстрация к проекту](https://github.com/tommios/ListEmployees-BackEnd/blob/dev-jwt-auth/image/02_GET_with_token.JPG)
 
-![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/03_GET_without_token.JPG)
+![Иллюстрация к проекту](https://github.com/tommios/ListEmployees-BackEnd/blob/dev-jwt-auth/image/03_GET_without_token.JPG)
 
-![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/04_MongoDB.JPG)
+![Иллюстрация к проекту](https://github.com/tommios/ListEmployees-BackEnd/blob/dev-jwt-auth/image/04_MongoDB.JPG)
