@@ -7,3 +7,13 @@ Link to FrontEnd part [ListEmployees-FrontEnd](https://github.com/tommios/ListEm
 In the project directory, you can run:
 
 ### `node server.js`
+
+Screenshots:
+
+![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/01_Postman_signin.JPG)
+
+![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/02_GET_with_token.JPG)
+
+![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/03_GET_without_token.JPG)
+
+![Иллюстрация к проекту](https://raw.githubusercontent.com/tommios/ListEmployees-BackEnd/tree/dev-jwt-auth/image/04_MongoDB.JPG)
