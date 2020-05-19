@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `node server.js`
 
+#
+
 #### These are the APIs we provide:
 
 | Methods | Urls                 | Actions                            |
@@ -27,9 +29,9 @@ In the project directory, you can run:
 | DELETE  | `/api/employees/:id` | delete a Employee with id          |
 | DELETE  | `/api/employees/`    | delete all Employees               |
 
-Screenshots:
-
 #
+
+### Screenshots:
 
 ##### Login an legal account: POST /api/auth/signin
 
@@ -49,6 +51,6 @@ Screenshots:
 
 #
 
-##### collection Employees in MongoDB database:
+##### Collection Employees in MongoDB database:
 
 ![Иллюстрация к проекту](https://github.com/tommios/ListEmployees-BackEnd/blob/dev-jwt-auth/image/04_MongoDB.JPG)
