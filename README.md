@@ -10,22 +10,22 @@ In the project directory, you can run:
 
 #### These are the APIs we provide:
 
-| Methods | Urls               | Actions                            |
-| ------- | ------------------ | ---------------------------------- |
-| POST    | /api/auth/signup   | signup new account                 |
-| POST    | /api/auth/signin   | login an account                   |
-|         |                    |                                    |
-| GET     | /api/test/all      | retrieve public content (TEST)     |
-| GET     | /api/test/user     | access User’s content (TEST)       |
-| GET     | /api/test/mod      | access Moderator’s content (TEST)  |
-| GET     | /api/test/admin    | access Admin’s content (TEST)      |
-|         |                    |                                    |
-| POST    | /api/employees/    | create a new Employee              |
-| GET     | /api/employees/    | retrieve all Employees             |
-| GET     | /api/employees/:id | retrieve a single Employee with id |
-| PATCH   | /api/employees/:id | update a Employee with id          |
-| DELETE  | /api/employees/:id | delete a Employee with id          |
-| DELETE  | /api/employees/    | delete all Employees               |
+| Methods | Urls                 | Actions                            |
+| ------- | -------------------- | ---------------------------------- |
+| POST    | `/api/auth/signup`   | signup new account                 |
+| POST    | `/api/auth/signin`   | login an account                   |
+|         |                      |                                    |
+| GET     | `/api/test/all`      | retrieve public content (TEST)     |
+| GET     | `/api/test/user`     | access User’s content (TEST)       |
+| GET     | `/api/test/mod`      | access Moderator’s content (TEST)  |
+| GET     | `/api/test/admin`    | access Admin’s content (TEST)      |
+|         |                      |                                    |
+| POST    | `/api/employees/`    | create a new Employee              |
+| GET     | `/api/employees/`    | retrieve all Employees             |
+| GET     | `/api/employees/:id` | retrieve a single Employee with id |
+| PATCH   | `/api/employees/:id` | update a Employee with id          |
+| DELETE  | `/api/employees/:id` | delete a Employee with id          |
+| DELETE  | `/api/employees/`    | delete all Employees               |
 
 Screenshots:
 
