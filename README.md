@@ -10,6 +10,9 @@ In the project directory, you can run:
 
 #
 
+- User can signup new account, or login with username & password.
+- By role (admin, moderator, user), the User has access to protected resources or not
+
 #### These are the APIs we provide:
 
 | Methods | Urls                 | Actions                            |
