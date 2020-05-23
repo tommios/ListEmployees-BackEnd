@@ -2,6 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const keys = require("./app/keys");
 
 const db = require("./app/models");
 const Role = db.role;
@@ -9,7 +10,7 @@ const Role = db.role;
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:8081",
+  origin: keys.ORIGIN,
 };
 
 app.use(cors(corsOptions));
@@ -24,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 
 db.mongoose
-  .connect(`mongodb://${db.HOST}:${db.PORT}/${db.DB}`, {
+  .connect(keys.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,

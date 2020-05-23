@@ -1,6 +1,7 @@
 // Controller for Authentication
-const config = require("../config/auth.config");
 const db = require("../models");
+const keys = require("../keys");
+
 const User = db.user;
 const Role = db.role;
 
@@ -90,7 +91,7 @@ exports.signin = (req, res) => {
         });
       }
 
-      let token = jwt.sign({ id: user.id }, config.secret, {
+      let token = jwt.sign({ id: user.id }, keys.SECRET_KEY, {
         expiresIn: 86400, // 24 hours
       });
 
